@@ -43,9 +43,7 @@ def sort(width, height, length, mass):
         
         '''Check if package is bulky'''
         is_bulky = False
-        if volume >= 1000000:  # volume in cm3
-            is_bulky = True
-        if width >= 150 or height >= 150 or length >= 150:  # dimensions in cm
+        if volume >= 1000000 or (width >= 150 or height >= 150 or length >= 150):  # volume in cm3 , dimensions in cm
             is_bulky = True
         
         '''Check if package is heavy'''
